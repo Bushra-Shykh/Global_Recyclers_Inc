@@ -1,0 +1,326 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Global Recyclers lnc</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="icon" type="image/png" href="favicon.ico"> -->
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!--Google Font link-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/fonticons.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+    <script src="country.js"></script>
+
+
+
+    <!--For Plugins external css-->
+    <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+
+
+    <!--Contact Us Section-->
+    <section id="contact" class="contact fix">
+        <div>
+            <div class="container">
+                <div class="row roomy-50">
+                    <div class="main_contact bg-mega roomy-50 text-white border-radius-1">
+                        <div class="col-md-6 py-0">
+                            <img src="assets/img/con2.jpg" class="con-img" alt="">
+                        </div>
+                        <div class="col-md-6 sm-m-top-30">
+                            <h1 class="text-center text-white p-bottom-30">Contact Us</h1>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <form class="gform pure-form pure-form-stacked"   id="myForm" method="POST" data-email="bushrashykh23@gmail.com"
+  action="https://script.google.com/macros/s/AKfycbzvAr8z-FfjOnBrBYIbfOzWP3g5cFJ10PS5F6JfL-RxuGdtucbLKLUAP2nYNWCvMbimXQ/exec">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input id="first_name" name="name" type="text"
+                                                        placeholder="Enter Your Name" class="form-control">
+                                                    <p id="firstNameError" class="error"></p>
+                                                    <!-- Error message placeholder -->
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input id="phone" name="phone" type="tel"
+                                                        placeholder="Enter 11 digit Number" class="form-control"
+                                                        pattern="[0-9]{11}" autocomplete="off" maxlength="11"
+                                                        onkeydown="numberonly(event)">
+                                                    <p id="phoneError" class="error"></p>
+                                                    <!-- Error message placeholder -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+
+                                                    <select id="country" class="form-control">
+                                                        <option>select country</option>
+                                                    </select>
+                                                    <p id="countryError" name="name2" class="error"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <select id="city" class="form-control">
+                                                        <option>_</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <div class="row">
+                                     <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <textarea id="message" name="message" class="form-control" rows="6"
+                                                        placeholder="Enter the Message Here" maxlength="20"
+                                                        style="color:black;"></textarea>
+                                                    <p id="messageError" class="error"></p>
+                                                    <!-- Error message placeholder -->
+                                                    <p id="charCount" class="text-muted">Characters remaining: 20</p>
+                                                </div>
+                                                <div class="form-group text-center">
+                                                    <button type="submit" class="btn btn-primary"
+                                                        onclick="validateForm(event)">SEND MESSAGE</button>
+                                                </div>
+                                                <div class="thankyou_message" id="messagethanks">
+                                                    <p>Form submitted successfully! Thank you.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End off Contact Section col-md-offset-2-->
+
+
+
+
+    <!-- JS includes -->
+
+    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.collapse.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+
+
+    <!-- paradise slider js -->
+
+
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyD_tAQD36pKp9v4at5AnpGbvBUsLCOSJx8"></script>
+    <script src="assets/js/gmaps.min.js"></script>
+
+    <script>
+
+
+    
+   (function() {
+  function validEmail(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return re.test(email);
+  }
+
+  function validateHuman(honeypot) {
+    if (honeypot) {
+      console.log("Robot Detected!");
+      return true;
+    } else {
+      console.log("Welcome Human!");
+    }
+  }
+  function getFormData(form) {
+    var elements = form.elements;
+
+    var fields = Object.keys(elements).filter(function(k) {
+          return (elements[k].name !== "honeypot");
+    }).map(function(k) {
+      if(elements[k].name !== undefined) {
+        return elements[k].name;
+      }else if(elements[k].length > 0){
+        return elements[k].item(0).name;
+      }
+    }).filter(function(item, pos, self) {
+      return self.indexOf(item) == pos && item;
+    });
+
+    var formData = {};
+    fields.forEach(function(name){
+      var element = elements[name];
+      formData[name] = element.value;
+      if (element.length) {
+        var data = [];
+        for (var i = 0; i < element.length; i++) {
+          var item = element.item(i);
+          if (item.checked || item.selected) {
+            data.push(item.value);
+          }
+        }
+        formData[name] = data.join(', ');
+      }
+    });
+
+    // add form-specific values into the data
+    formData.formDataNameOrder = JSON.stringify(fields);
+    formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
+    formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+    console.log(formData);
+    return formData;
+  }
+
+  function handleFormSubmit(event) {  
+    event.preventDefault();           
+    var form = event.target;
+    var data = getFormData(form);         
+    if( data.email && !validEmail(data.email) ) {   
+      var invalidEmail = form.querySelector(".email-invalid");
+      if (invalidEmail) {
+        invalidEmail.style.display = "block";
+        return false;
+      }
+    } else {
+      disableAllButtons(form);
+      var url = form.action;
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.onreadystatechange = function() {
+          console.log(xhr.status, xhr.statusText);
+          console.log(xhr.responseText);
+          var formElements = form.querySelector(".form-elements")
+          if (formElements) {
+            formElements.style.display = "none"; // hide form
+          }
+          var thankYouMessage = form.querySelector(".thankyou_message");
+          if (thankYouMessage) {
+            thankYouMessage.style.display = "block";
+          }
+          return;
+      };
+      var encoded = Object.keys(data).map(function(k) {
+          return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+      }).join('&');
+      xhr.send(encoded);
+    }
+  }
+  
+  function loaded() {
+    console.log("Contact form submission handler loaded successfully.");
+    var forms = document.querySelectorAll("form.gform");
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].addEventListener("submit", handleFormSubmit, false);
+    }
+  };
+  document.addEventListener("DOMContentLoaded", loaded, false);
+
+  function disableAllButtons(form) {
+    var buttons = form.querySelectorAll("button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = true;
+    }
+  }
+})();
+document.getElementById('message').addEventListener('input', function () {
+            var message = document.getElementById('message').value.trim();
+            var remainingChars = 20 - message.length;
+            document.getElementById('charCount').textContent = 'Characters remaining: ' + remainingChars;
+        });
+
+        function numberonly(event) {
+            var key = event.key;
+            if (isNaN(parseInt(key)) && key !== "Backspace") {
+                event.preventDefault();
+            }
+        }
+
+//Populate the Names of City
+ document.addEventListener("DOMContentLoaded", function() {
+  var countrySelect = document.getElementById("country");
+  var citySelect = document.getElementById("city");
+
+  // Populate country dropdown
+  for (var country in countryCityData) {
+    var option = document.createElement("option");
+    option.value = country;
+    option.text = country;
+    countrySelect.appendChild(option);
+  }
+
+  // Update city dropdown based on selected country
+  countrySelect.addEventListener("change", function() {
+    var selectedCountry = countrySelect.value;
+    var cities = countryCityData[selectedCountry];
+    citySelect.innerHTML = ""; // Clear previous options
+
+    for (var i = 0; i < cities.length; i++) {
+      var option = document.createElement("option");
+      option.value = cities[i];
+      option.text = cities[i];
+      citySelect.appendChild(option);
+    }
+  });
+});
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>
+
+
+
+
+    </script>
+
+
+
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="country.js"></script>
+
+</body>
+
+</html>
